@@ -1,0 +1,70 @@
+/*Pagina Home*/
+body {
+  background-image: url(https://staticmobly.akamaized.net/r/2000x2000/p/Allodi-Papel-de-Parede-Adesivo---Folhas-Riscadas---906ppn-8175-054865-2.jpg);
+  padding: 50px;
+  
+}
+
+#home-center {
+  text-align: center;
+  background-color: hsla(224, 11%, 52%, 0.103);
+  height: 80px;
+  padding-top: 40px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  text-align: center;
+  background-color: hsla(224, 11%, 52%, 0.103);
+  font-size: 30px;
+}
+
+.principal {
+  display: flex;
+  margin: 50px;
+}
+
+.conteudo {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+}
+
+footer,
+p {
+  margin-right: 40px;
+}
+
+/*Pagina Contato*/
+form {
+    width: 600px;
+    background-color: rgb(219, 210, 210)
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}  
+
+.ml-50 {
+  margin-left: 40px
+}
+
+/*Pagina Curriculo*/
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

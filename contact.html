@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Generation</title>
 </head>
-<body>
+<body">
     
-    <h1>Bem vindo a Contatos</h1>
+    <h1 id="home-center">Bem vindo a Contatos</h1>
 
+    <div class="nav-bar">
     <ul>
         <li>
             <a href="home.html">Home</a>
@@ -18,11 +21,13 @@
             <a href="curriculo.html">Curriculo</a>
         </li>
     </ul>
+   </div>
+   
     <div>
         
-    <h3>Links de suporte</h3>
+    <h3 class="container">Links de suporte</h3>
 
-    <ol>
+    <ol class="container">
         <li>
             <h5>Link de pesquisa principal</h5>
             <a href="https://www.w3schools.com/">W3schools</a>
@@ -34,28 +39,33 @@
         </li>
     </ol>
 
-    <h2>links de contato</h2>
-
-    <ol>
+    <div  class="container">
+        <h2>links de contato</h2>
+        <ol>
+        
+            <li>
+                <a href="https://github.com/felipe-8847?tab=repositories">Github Felipe alves</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/felipe-alves-45b93a8b/">Linkedin Felipe alves</a>
+            </li>
+        </ol>
     </div>
-        <li>
-            <a href="https://github.com/felipe-8847?tab=repositories">Github Felipe alves</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/felipe-alves-45b93a8b/">Linkedin Felipe alves</a>
-        </li>
-    </ol>
 
     <br>
 
-    <div>
+    <div class="container">
         <form>
             <fieldset>
             <legend>Dados pessoais:</legend>
-            <label for="fname">Nome:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="seu nome"><br>
-            <label for="lname">Sobrenome:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="seu sobrenome"><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" placeholder="Digite o seu nome" onkeyup='validarNome()'>
+            <div id='txtNome'></div>
+            <br>
+            <label for="email">E-meil:</label><br>
+            <input type="email" id="email" name="emeil" placeholder="Digite o seu email" onkeyup=' validaEmail()'>
+            <div id='txtEmail'></div>
+            <br>
 
             <h3>Oque vc ira aprender hj</h3>
             <input type="radio" id="html" name="fav_language" value="HTML">
@@ -66,10 +76,25 @@
             <label for="javascript">JavaScript</label>
             <br>
             <br>
-
-            <input type="button" name=myButton value="Enviar">
+            <input type="button" name=myButton value="Enviar" onclick="enviar()"  >
         </fieldset>
           </form>
-    </div>
+
+          
+      <div class="ml-50">
+
+        <p>Av. Paulista, 100</p>
+        <p>São Paulo - SP</p>
+     
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+     </div>
+  </div>
+    
+    <footer class="container">
+        <p>Author: Felipe Alves</p>
+        <p><a href="mailto:felipe@example.com">felipe@example.com</a></p>
+      </footer>
+
+      <script src="assets/js/script.js"></script>
 </body>
 </html>
